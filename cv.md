@@ -21,3 +21,14 @@ I'm 25 years old. I work at an oil refinery. I realized long ago that work was n
 * JavaScript (in process)
 * Git, GitHub
 * Figma (for web development)
+
+## Code example
+
+```javascript
+function numberToString(num) {
+  return String(num);
+}
+
+let string = numberToString(67);
+alert( string );
+```

@@ -32,3 +32,13 @@ function numberToString(num) {
 let string = numberToString(67);
 alert( string );
 ```
+
+## Education
+
+* Mozyr State Polytechnic College
+* [HTML Academy](https://htmlacademy.ru/) (Adaptive Website Coding and Automation)
+* JavaScript https://learn.javascript.ru/ (in process)
+
+## English
+
+**A2** (studying on [Puzzle English](https://puzzle-english.com/))

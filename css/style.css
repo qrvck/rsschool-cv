@@ -1,0 +1,387 @@
+/* global */
+
+:root {
+    --orange: #fecb00;
+    --light-gray: #E4E6E7;
+    --black: #000000;
+    
+    --light-black: #242424;
+    --gray: #666666;
+    --white: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* main */
+
+.page-body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--light-black);
+    background-color: var(--black);
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    max-width: 1275px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 660px) {
+    .main {
+        display: block;
+    }
+}
+
+.left-column {
+    background-color: var(--orange);
+    width: 38%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    padding-left: 55px;
+    padding-right: 55px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1050px) {
+    .left-column {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 660px) {
+    .left-column {
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+}
+
+.right-column {
+    background-color: var(--light-gray);
+    width: 62%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 72px;
+    padding-right: 72px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1050px) {
+    .right-column {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    .right-column {
+        width: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+}
+
+.user {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.user__figure {
+    margin: 0;
+}
+
+.user__photo {
+    width: 74%;
+    border-radius: 7px;
+    vertical-align: top;
+    margin-bottom: 38px;
+}
+
+@media (max-width: 1050px) {
+    .user__photo {
+     width: 61%;
+    }
+}
+
+.user__full-name {
+    font-size: 33px;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.user__surname {
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.user__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contacts {
+    padding-bottom: 45px;
+    margin-bottom: 55px;
+    border-bottom: 2px solid var(--gray);
+}
+
+@media (max-width: 660px) {
+    .contacts {
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+.contacts__title {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.contacts__list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+
+@media (max-width: 1050px) {
+    .contacts__list {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .contacts__list {
+        text-align: center;
+    }
+}
+
+.contacts__item-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contacts__item-link,
+.education__item-link,
+.english__info-link {
+    color: inherit;
+}
+
+.contacts__item-link:hover,
+.education__item-link:hover,
+.english__info-link:hover {
+    color: var(--gray);
+}
+
+.skills__title {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.skills__list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+
+@media (max-width: 1050px) {
+    .skills__list {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .skills__list {
+        text-align: center;
+    }
+}
+
+.curriculum-vitae {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--orange);
+    text-align: center;
+}
+
+@media (max-width: 660px) {
+    .curriculum-vitae {
+        display: none;
+    }
+}
+
+.curriculum-vitae__text {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about-me,
+.code-example,
+.education,
+.english {
+    margin-bottom: 45px;
+}
+
+.about-me__title,
+.code-example__title,
+.education__title,
+.projects__title,
+.english__title {
+    margin-top: 0;
+    margin-bottom: 46px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: var(--orange);
+    background-color: var(--light-black);
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-me__text {
+    text-align: justify;
+}
+
+.code-example {
+    margin: 0;
+}
+
+.code-example__title {
+    margin-bottom: 18px;
+}
+
+.code-example__pre {
+    margin: 0;
+}
+
+.code-example__view {
+    display: block;
+    margin-top: -25px;
+    margin-bottom: -35px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 285px;
+}
+
+.projects {
+    margin-bottom: 45px;
+}
+
+.projects__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.projects__item {
+    margin-bottom: 26px;
+
+}
+
+.projects__nerds-link,
+.projects__pink-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.projects__nerds-link:hover,
+.projects__pink-link:hover {
+    opacity: 0.5;
+}
+
+/* footer */
+
+.page-footer {
+    max-width: 1275px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--light-gray);
+    border-top: 2px solid var(--gray);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 660px) {
+    .page-footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.page-footer__creation-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+@media (max-width: 660px) {
+    .page-footer__creation-text {
+        justify-content: flex-end;
+    }
+}
+
+.page-footer__creation-date {
+    margin: 0;
+    line-height: 12px;
+    color: var(--gray);
+}
+
+.page-footer__github-img,
+.page-footer__rs-school-img {
+    vertical-align: top;
+}
+
+.page-footer__rs-school,
+.page-footer__github {
+    text-align: center;
+}
+
+@media (max-width: 660px) {
+    .page-footer__github {
+        text-align: left;
+    }
+}
+
+.page-footer__rs-school-link,
+.page-footer__github-link {
+    display: inline-block;
+}
+
+.page-footer__rs-school-link:hover,
+.page-footer__github-link:hover {
+    opacity: 0.4;
+}

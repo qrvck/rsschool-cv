@@ -13,3 +13,11 @@
 ## About me
 
 I'm 25 years old. I work at an oil refinery. I realized long ago that work was not to my liking. I wanted to find something interesting, entertaining, interesting, promising, surrounded by smart and good people. I started looking for what I would like and stumbled upon a frontend Development. I really liked it, and I started my interesting and exciting way of study. That's why I'm here at RS School.
+
+## Skills
+
+* HTMl5
+* CSS3
+* JavaScript (in process)
+* Git, GitHub
+* Figma (for web development)
